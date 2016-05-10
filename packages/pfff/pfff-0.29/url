@@ -1,3 +1,3 @@
-http: "https://github.com/hyunha/pfff/archive/v0.29.tar.gz"
+http: "https://kmash.org/repo/pfff/v0.29.tar.gz"
 checksum: "d9d8337d5b7a3f4263c09a2dee463161"
-mirror: [https://kmash.org/repo/pfff/v0.29.tar.gz]
+mirrors: [https://github.com/hyunha/pfff/archive/v0.29.tar.gz]
