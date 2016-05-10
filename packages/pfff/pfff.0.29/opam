@@ -3,7 +3,7 @@ maintainer: "Hyunha Kim <lagrato@gmail.com>"
 authors: [ "Yoann Padioleau <pad@fb.com>" ]
 homepage: "https://github.com/facebook/pfff/wiki/Main"
 build: [
-  ["./configure" "--novisual" "--nocmt" "--nobytecode"]
+  ["./configure" "--novisual" "--nocmt"]
   [make "depend"]
   [make]
   [make "opt"]
@@ -12,7 +12,7 @@ install: [
   [make "install-findlib"]
 ]
 remove: [
-  ["./configure" "--novisual" "--nocmt" "--nobytecode"]
+  ["./configure" "--novisual" "--nocmt"]
   [make "uninstall-findlib"]
 ]
 depends: ["ocamlfind" "camlp4"]
