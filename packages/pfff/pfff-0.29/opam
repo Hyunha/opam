@@ -1,0 +1,21 @@
+opam-version: "1.2"
+maintainer: "Hyunha Kim <lagrato@gmail.com>"
+authors: [ "Yoann Padioleau <pad@fb.com>" ]
+homepage: "https://github.com/facebook/pfff/wiki/Main"
+build: [
+  ["./configure" "--novisual" "--nocmt" "--nobytecode"]
+  [make "depend"]
+  [make]
+  [make "opt"]
+]
+install: [
+  [make "install-findlib"]
+]
+remove: [
+  ["./configure" "--novisual" "--nocmt" "--nobytecode"]
+  [make "uninstall-findlib"]
+]
+depends: ["ocamlfind" "camlp4"]
+available: [ ocaml-version >= "4.03.0" ]
+bug-reports: "https://github.com/hyunha/pfff/issues"
+dev-repo: "https://github.com/hyunha/pfff.git"
