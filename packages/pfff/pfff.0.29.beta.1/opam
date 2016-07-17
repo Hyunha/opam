@@ -15,7 +15,7 @@ remove: [
   ["./configure" "--novisual" "--nocmt"]
   [make "uninstall-findlib"]
 ]
-depends: ["ocamlfind" "camlp4"]
+depends: ["ocamlfind" "camlp4" "camlzip"]
 available: [ ocaml-version >= "4.03.0" ]
 bug-reports: "https://github.com/hyunha/pfff/issues"
 dev-repo: "https://github.com/hyunha/pfff.git"
